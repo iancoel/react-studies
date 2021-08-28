@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import JSXArrays from './JSXArrays';
+import Componentes from './Componentes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <JSXArrays />
+    <Componentes />
   </React.StrictMode>,
   document.getElementById('root'),
 );
