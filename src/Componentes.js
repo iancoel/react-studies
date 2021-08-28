@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Componentes = () => {
-  return <div></div>;
+  return <div>teste</div>;
 };
 
 export default Componentes;

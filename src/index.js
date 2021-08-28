@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Componentes from './Componentes';
+import Propriedades from './Propriedades';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Componentes />
+    <Propriedades />
   </React.StrictMode>,
   document.getElementById('root'),
 );
