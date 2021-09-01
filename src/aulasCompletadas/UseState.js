@@ -1,5 +1,4 @@
 import React from 'react';
-import UseState2 from './UseState2';
 
 const UseState = () => {
   const [contar, setContar] = React.useState(1);

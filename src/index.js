@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UseState from './UseState';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseState />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
