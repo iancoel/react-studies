@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DesafioHeader from './DesafioHeader';
-import DesafioApp from './DesafioApp';
+import UseState from './UseState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DesafioHeader />
-    <DesafioApp />
+    <UseState />
   </React.StrictMode>,
   document.getElementById('root'),
 );

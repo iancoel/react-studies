@@ -14,8 +14,8 @@ const DesafioProdutos = () => {
   };
 
   const produtos = [
-    { nome: 'Notebook', propriedades: ['16gb ram', '512gb'] },
-    { nome: 'Smartphone', propriedades: ['2gb ram', '128gb'] },
+    { nome: 'Notebook', propriedades: ['16gb ram', '512gb', 'i5'] },
+    { nome: 'Smartphone', propriedades: ['2gb ram', '128gb', 'i3'] },
   ];
 
   return (
