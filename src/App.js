@@ -1,13 +1,13 @@
 import React from 'react';
+import Produto from './Produto';
+import { GlobalStorage } from './GlobalContext';
 
 const App = () => {
-  const [contar, setContar] = React.useState(0);
-
-  const handleClick = React.useCallback(() => {
-    setContar((contar) => contar + 1);
-  }, []);
-
-  return <button onClick={handleClick}>{contar}</button>;
+  return (
+    <GlobalStorage>
+      <Produto />
+    </GlobalStorage>
+  );
 };
 
 export default App;
