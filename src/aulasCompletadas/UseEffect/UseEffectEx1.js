@@ -1,5 +1,5 @@
 import React from 'react';
-import Produto from './Produto';
+import Produto from './UseEffectEx2';
 
 const App = () => {
   const [produto, setProduto] = React.useState(null);
