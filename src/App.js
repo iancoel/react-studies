@@ -1,10 +1,26 @@
 import React from 'react';
-import Button from './Button';
+import Exemplo from './Exemplo';
+
+function reducer(state, action) {
+  switch (action) {
+    case 'aumentar':
+      return state + 1;
+    case 'diminuir':
+      return state - 1;
+    default:
+      throw new Error();
+  }
+}
 
 const App = () => {
+  const [state, dispatch] = React.useReducer(reducer, 0);
+
   return (
     <div>
-      <Button width={300}>Clique aqui</Button>
+      <button onClick={() => dispatch('aumentar')}>+</button>
+      <button onClick={() => dispatch('diminuir')}>-</button>
+      {state}
+      <Exemplo />
     </div>
   );
 };
