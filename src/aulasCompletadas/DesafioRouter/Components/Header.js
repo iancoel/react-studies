@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 
 const Header = () => {
   const activeStyle = {
-    background: '#eee',
+    background: '#ddd',
   };
 
   return (
@@ -12,10 +12,9 @@ const Header = () => {
       <ul>
         <li>
           <NavLink
-            className={styles.link}
+            className={`${styles.link}`}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
             to="/"
-            activeClassName={styles.active}
-            activeStyle={activeStyle}
             end
           >
             Produtos
@@ -23,9 +22,8 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            className={styles.link}
-            activeClassName={styles.active}
-            activeStyle={activeStyle}
+            className={`${styles.link}`}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
             to="/contato"
           >
             Contato
